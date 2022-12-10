@@ -1,0 +1,50 @@
+﻿@model IEnumerable<PieceWorWorker.Models.PieceWorkWorkerModel>
+
+@{
+    ViewData["Title"] = "Summary";
+ }
+<h1>Summary</h1>
+
+@{
+    ViewData["Title"] = "Indez";
+    int totalWorkers = 0;
+    int totalMessages = 0;
+    decimal TotalPay = 0;
+    decimal AveragePay = 0;
+
+
+    foreach (var item in Model) {
+        totalWorkers++;
+        totalMessages += item.Messages;
+        TotalPay += item.GetPay();
+
+
+
+    }
+    // Possible divide by zero
+    if (totalWorkers > 0) {
+        AveragePay = TotalPay / totalWorkers;
+
+
+    }
+    else {
+        AveragePay = 0;
+    }
+
+
+}
+<div class="col-md-6 offset-2 text-center">
+
+    <p>
+        Total Workers: @totalWorkers
+    </p>
+    <p>
+        Total Messages: @totalMessages
+    </p>
+    <p>
+        Total Pay: @TotalPay.ToString("c")
+    </p>
+    <p>
+        Average Pay: @AveragePay.ToString("c")
+    </p>
+</div>

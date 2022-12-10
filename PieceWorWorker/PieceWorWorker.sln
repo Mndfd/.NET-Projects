@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieceWorWorker", "PieceWorWorker\PieceWorWorker.csproj", "{DBB92E06-CEDC-4F65-BCAE-EC08780E61D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBB92E06-CEDC-4F65-BCAE-EC08780E61D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB92E06-CEDC-4F65-BCAE-EC08780E61D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB92E06-CEDC-4F65-BCAE-EC08780E61D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB92E06-CEDC-4F65-BCAE-EC08780E61D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1566F109-8E42-4C81-B9B5-B3C2EDD0114F}
+	EndGlobalSection
+EndGlobal

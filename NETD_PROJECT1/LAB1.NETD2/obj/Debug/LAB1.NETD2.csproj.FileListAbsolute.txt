@@ -1,0 +1,15 @@
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.csproj.AssemblyReference.cache
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\MainWindow.g.cs
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\App.g.cs
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2_MarkupCompile.cache
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2_MarkupCompile.lref
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\bin\Debug\LAB1.NETD2.exe.config
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\bin\Debug\LAB1.NETD2.exe
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\bin\Debug\LAB1.NETD2.pdb
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\MainWindow.baml
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.g.resources
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.Properties.Resources.resources
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.csproj.GenerateResource.cache
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.csproj.CoreCompileInputs.cache
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.exe
+C:\Users\Onur\source\repos\LAB1.NETD2\LAB1.NETD2\obj\Debug\LAB1.NETD2.pdb

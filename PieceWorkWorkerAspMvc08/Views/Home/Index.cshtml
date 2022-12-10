@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Worker Entry";
+}
+
+@model PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel
+
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <!-- Controls related to the worker's first name -->
+    <div class="row">
+
+        <div class="col-md-2 offset-2">
+            <p>
+                <!-- Using an Html helper method to create the label. -->
+                @Html.LabelFor(m => m.FirstName, new { @class = "control-label" }):
+            </p>
+        </div>
+        <div class="col-md-2">
+            <p>
+                <!-- Using an Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using an Html helper method to create space for a validation message. -->
+                @Html.ValidationMessageFor(m => m.FirstName, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+
+    <!-- Controls related to the worker's last name -->
+    <div class="row">
+
+        <div class="col-md-2 offset-2">
+            <p>
+                <!-- Using an Html helper method to create the label. -->
+                @Html.LabelFor(m => m.LastName, new { @class = "control-label" }):
+            </p>
+        </div>
+        <div class="col-md-2">
+            <p>
+                <!-- Using an Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using an Html helper method to create space for a validation message. -->
+                @Html.ValidationMessageFor(m => m.LastName, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+
+    <!-- Controls related to the worker's messages -->
+    <div class="row">
+
+        <div class="col-md-2 offset-2">
+            <p>
+                <!-- Using an Html helper method to create the label. -->
+                @Html.LabelFor(m => m.Messages, new { @class = "control-label" }):
+            </p>
+        </div>
+        <div class="col-md-2">
+            <p>
+                <!-- Using an Html helper method to create the textbox. -->
+                @Html.TextBoxFor(m => m.Messages, new { @class = "form-control" })
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+                <!-- Using an Html helper method to create space for a validation message. -->
+                @Html.ValidationMessageFor(m => m.Messages, string.Empty, new { @class = "text-danger" })
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- Controls related to the worker's status as normal or senior workers. -->
+    <div class="row">
+
+        <div class="col-md-2 offset-2">
+            <p>
+                Normal Worker: @Html.RadioButtonFor(m => m.IsSenior, false)
+            </p>
+        </div>
+        <div class="col-md-2">
+            <p>
+                Senior Worker: @Html.RadioButtonFor(m => m.IsSenior, true, new { @checked = "checked" })
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 offset-2">
+            <p>
+                <!-- This is our "submit" button or "calculate" - not a helper method or anything just straight-up HTML. -->
+                <input class="btn btn-primary" type="submit" name="Index" value="Calculate" />
+            </p>
+        </div>
+        <div class="col-md-2">
+            <p>
+                <!-- This is our clear button but it's actually a button-styled link. -->
+                @Html.ActionLink("Clear", "Index", "Home", new { @class = "btn btn-secondary", @role = "button" })
+            </p>
+        </div>
+    </div>
+
+    @if (PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.TotalWorkers > 0)
+    {
+        <!-- Controls for displaying the results and totals -->
+        <div class="row">
+
+            <div class="col-md-4 offset-2">
+                @if (PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.Pay > 0M)
+                {
+                <p>
+                    This worker's pay: @PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.Pay.ToString("c")
+                </p>
+                }
+            <p>
+                Total Workers: @PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.TotalWorkers.ToString()
+            </p>
+            <p>
+
+                Total Messages @PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.TotalMessages.ToString()
+            </p>
+
+            <p>
+                Total Pay: @PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.TotalPay.ToString("c")
+            </p>
+
+            <p>
+                Average Pay: @PieceWorkWorkerAspMvc08.Models.PieceWorkWorkerModel.AveragePay.ToString("c")
+            </p>
+            </div>
+        </div>
+    }
+
+}
